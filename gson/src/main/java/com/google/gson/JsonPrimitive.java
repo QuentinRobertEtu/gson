@@ -31,7 +31,9 @@ import java.util.Objects;
  */
 public final class JsonPrimitive extends JsonElement {
 
-  private final Object value;
+	private static final int NULL_VALUE_HASHCODE = 31;
+	
+	private final Object value;
 
   /**
    * Create a primitive containing a boolean value.
@@ -257,7 +259,7 @@ public final class JsonPrimitive extends JsonElement {
   @Override
   public int hashCode() {
     if (value == null) {
-      return 31;
+      return JsonPrimitive.NULL_VALUE_HASHCODE;
     }
     // Using recommended hashing algorithm from Effective Java for longs and doubles
     if (isIntegral(this)) {
