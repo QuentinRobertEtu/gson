@@ -127,15 +127,6 @@ public final class JsonArray extends JsonElement implements Iterable<JsonElement
   }
 
   /**
-   * Adds all the elements of the specified array to self.
-   *
-   * @param array the array whose elements need to be added to the array.
-   */
-  public void addAll(JsonArray array) {
-    elements.addAll(array.elements);
-  }
-
-  /**
    * Replaces the element at the specified position in this array with the specified element.
    *
    * @param index index of the element to replace
