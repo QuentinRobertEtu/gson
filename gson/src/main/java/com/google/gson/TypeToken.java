@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.gson.reflect;
+package com.google.gson;
 
 import com.google.gson.internal.$Gson$Types;
 import com.google.gson.internal.TroubleshootingGuide;

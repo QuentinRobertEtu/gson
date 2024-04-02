@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.gson.internal.reflect;
+package com.google.gson.internal;
 
 import com.google.gson.JsonIOException;
 import com.google.gson.internal.GsonBuildConfig;

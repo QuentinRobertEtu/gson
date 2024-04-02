@@ -34,7 +34,7 @@ import com.google.gson.internal.ObjectConstructor;
 import com.google.gson.internal.Primitives;
 import com.google.gson.internal.ReflectionAccessFilterHelper;
 import com.google.gson.internal.TroubleshootingGuide;
-import com.google.gson.internal.reflect.ReflectionHelper;
+import com.google.gson.internal.ReflectionHelper;
 import com.google.gson.reflect.TypeToken;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonToken;

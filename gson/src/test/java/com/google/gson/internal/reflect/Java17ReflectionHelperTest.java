@@ -24,6 +24,8 @@ import java.lang.reflect.Method;
 import java.nio.file.attribute.GroupPrincipal;
 import java.nio.file.attribute.UserPrincipal;
 import java.util.Objects;
+
+import com.google.gson.internal.ReflectionHelper;
 import org.junit.Test;
 
 public class Java17ReflectionHelperTest {

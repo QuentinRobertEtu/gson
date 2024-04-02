@@ -24,7 +24,6 @@ import com.google.gson.TypeAdapterFactory;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.Since;
 import com.google.gson.annotations.Until;
-import com.google.gson.internal.reflect.ReflectionHelper;
 import com.google.gson.reflect.TypeToken;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
