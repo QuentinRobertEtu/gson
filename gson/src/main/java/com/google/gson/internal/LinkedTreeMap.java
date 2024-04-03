@@ -395,7 +395,9 @@ public final class LinkedTreeMap<K, V> extends AbstractMap<K, V> implements Seri
     }
   }
 
-  /** Rotates the subtree so that its root's right child is the new root. */
+  /** Rotates the subtree so that its root's right child is the new root.
+   *
+   * @param root the root of the linked tree */
   private void rotateLeft(Node<K, V> root) {
     Node<K, V> left = root.left;
     Node<K, V> pivot = root.right;
@@ -420,7 +422,9 @@ public final class LinkedTreeMap<K, V> extends AbstractMap<K, V> implements Seri
     pivot.height = Math.max(root.height, pivotRight != null ? pivotRight.height : 0) + 1;
   }
 
-  /** Rotates the subtree so that its root's left child is the new root. */
+  /** Rotates the subtree so that its root's left child is the new root.
+   *
+   * @param root the root of the linked tree */
   private void rotateRight(Node<K, V> root) {
     Node<K, V> pivot = root.left;
     Node<K, V> right = root.right;
@@ -471,14 +475,22 @@ public final class LinkedTreeMap<K, V> extends AbstractMap<K, V> implements Seri
     V value;
     int height;
 
-    /** Create the header entry */
+    /** Create the header entry
+     *
+     * @param allowNullValue True if we allow Null Value */
     Node(boolean allowNullValue) {
       key = null;
       this.allowNullValue = allowNullValue;
       next = prev = this;
     }
 
-    /** Create a regular entry */
+    /** Create a regular entry
+     *
+     * @param allowNullValue True if we allow Null Value
+     * @param parent the parent node
+     * @param key the key in node
+     * @param next the next node
+     * @param prev the prev node */
     Node(boolean allowNullValue, Node<K, V> parent, K key, Node<K, V> next, Node<K, V> prev) {
       this.parent = parent;
       this.key = key;
