@@ -36,7 +36,7 @@ import com.google.gson.internal.bind.ReflectiveTypeAdapterFactory;
 import com.google.gson.internal.bind.SerializationDelegatingTypeAdapter;
 import com.google.gson.internal.bind.TypeAdapters;
 import com.google.gson.internal.sql.SqlTypesSupport;
-import com.google.gson.reflect.TypeToken;
+import com.google.gson.TypeToken;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonToken;
 import com.google.gson.stream.JsonWriter;
@@ -787,7 +787,7 @@ public final class Gson {
    *
    * @param src the object for which JSON representation is to be created
    * @param typeOfSrc The specific genericized type of src. You can obtain this type by using the
-   *     {@link com.google.gson.reflect.TypeToken} class. For example, to get the type for {@code
+   *     {@link com.google.gson.TypeToken} class. For example, to get the type for {@code
    *     Collection<Foo>}, you should use:
    *     <pre>
    * Type typeOfSrc = new TypeToken&lt;Collection&lt;Foo&gt;&gt;(){}.getType();
@@ -833,7 +833,7 @@ public final class Gson {
    *
    * @param src the object for which JSON representation is to be created
    * @param typeOfSrc The specific genericized type of src. You can obtain this type by using the
-   *     {@link com.google.gson.reflect.TypeToken} class. For example, to get the type for {@code
+   *     {@link com.google.gson.TypeToken} class. For example, to get the type for {@code
    *     Collection<Foo>}, you should use:
    *     <pre>
    * Type typeOfSrc = new TypeToken&lt;Collection&lt;Foo&gt;&gt;(){}.getType();
@@ -881,7 +881,7 @@ public final class Gson {
    *
    * @param src the object for which JSON representation is to be created
    * @param typeOfSrc The specific genericized type of src. You can obtain this type by using the
-   *     {@link com.google.gson.reflect.TypeToken} class. For example, to get the type for {@code
+   *     {@link com.google.gson.TypeToken} class. For example, to get the type for {@code
    *     Collection<Foo>}, you should use:
    *     <pre>
    * Type typeOfSrc = new TypeToken&lt;Collection&lt;Foo&gt;&gt;(){}.getType();
