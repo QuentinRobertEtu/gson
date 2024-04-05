@@ -77,7 +77,51 @@ public class JavaVersionTest {
   public void testJava10() {
     assertThat(JavaVersion.parseMajorJavaVersion("10.0.1")).isEqualTo(10); // Oracle JDK 10.0.1
   }
+  @Test
+  public void testJava11() {
+    assertThat(JavaVersion.parseMajorJavaVersion("11.0.1")).isEqualTo(11); // Oracle JDK 11.0.1
+  }
+  @Test
+  public void testJava12() {
+    assertThat(JavaVersion.parseMajorJavaVersion("12.0.1")).isEqualTo(12); // Oracle JDK 12.0.1
+  }
+  @Test
+  public void testJava13() {
+    assertThat(JavaVersion.parseMajorJavaVersion("13.0.1")).isEqualTo(13); // Oracle JDK 13.0.1
+  }
+  @Test
+  public void testJava14() {
+    assertThat(JavaVersion.parseMajorJavaVersion("14.0.1")).isEqualTo(14); // Oracle JDK 14.0.1
+  }
 
+  @Test
+  public void testJava15() {
+    assertThat(JavaVersion.parseMajorJavaVersion("15.0.1")).isEqualTo(15); // Oracle JDK 15.0.1
+  }
+  @Test
+  public void testJava16() {
+    assertThat(JavaVersion.parseMajorJavaVersion("16.0.1")).isEqualTo(16); // Oracle JDK 16.0.1
+  }
+  @Test
+  public void testJava17() {
+    assertThat(JavaVersion.parseMajorJavaVersion("17.0.1")).isEqualTo(17); // Oracle JDK 17.0.1
+  }
+  @Test
+  public void testJava18() {
+    assertThat(JavaVersion.parseMajorJavaVersion("18.0.1")).isEqualTo(18); // Oracle JDK 18.0.1
+  }
+  @Test
+  public void testJava19() {
+    assertThat(JavaVersion.parseMajorJavaVersion("19.0.1")).isEqualTo(19); // Oracle JDK 19.0.1
+  }
+  @Test
+  public void testJava20() {
+    assertThat(JavaVersion.parseMajorJavaVersion("20.0.1")).isEqualTo(20); // Oracle JDK 20.0.1
+  }
+  @Test
+  public void testJava21() {
+    assertThat(JavaVersion.parseMajorJavaVersion("21.0.1")).isEqualTo(21); // Oracle JDK 21.0.1
+  }
   @Test
   public void testUnknownVersionFormat() {
     assertThat(JavaVersion.parseMajorJavaVersion("Java9")).isEqualTo(6); // unknown format
