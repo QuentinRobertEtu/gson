@@ -18,7 +18,7 @@ package com.google.gson;
 
 import static com.google.common.truth.Truth.assertThat;
 
-import com.google.gson.reflect.TypeToken;
+import com.google.gson.TypeToken;
 import java.util.List;
 import org.junit.Test;
 

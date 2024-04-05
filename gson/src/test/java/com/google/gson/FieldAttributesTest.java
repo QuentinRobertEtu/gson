@@ -19,7 +19,7 @@ package com.google.gson;
 import static com.google.common.truth.Truth.assertThat;
 import static org.junit.Assert.fail;
 
-import com.google.gson.reflect.TypeToken;
+import com.google.gson.TypeToken;
 import java.lang.reflect.Modifier;
 import java.lang.reflect.Type;
 import java.util.List;

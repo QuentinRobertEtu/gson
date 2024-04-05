@@ -30,7 +30,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.internal.LazilyParsedNumber;
 import com.google.gson.internal.NumberLimits;
 import com.google.gson.internal.TroubleshootingGuide;
-import com.google.gson.reflect.TypeToken;
+import com.google.gson.TypeToken;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonToken;
 import com.google.gson.stream.JsonWriter;
